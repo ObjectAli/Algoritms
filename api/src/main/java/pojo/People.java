@@ -23,6 +23,10 @@ public class People {
         this.passportId = passportId;
     }
 
-    public People () {}
-    
+    public People() {}
+
+    public People(String nameUnq, BigInteger passportId) {
+        this.nameUnq = nameUnq;
+        this.passportId = passportId;
+    }
 }
