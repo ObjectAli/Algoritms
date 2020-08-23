@@ -1,20 +1,23 @@
+import org.junit.Test;
 import pojo.Human;
 import reader.XmlReader;
 import service.SearchService;
 
-import javax.xml.bind.JAXBException;
 import java.util.List;
 
-public class Application {
+import static org.junit.Assert.assertEquals;
 
+public class SearchServiceTest {
     private static SearchService searchService = new SearchService();
 
     private static XmlReader xmlReader = new XmlReader();
 
-    public static void main(String[] args) throws JAXBException {
+    @Test
+    public void testBinarySearch() throws Exception{
         List<Human> humans = xmlReader.humansReader();
-
         Human human = searchService.binarySearch(humans, 1112);
-        System.out.println(human);
+
+        assertEquals(human.getNameUnq(), "Сергеев Сергей Сергеевич");
+        assertEquals(human.getPassportId(), 1112);
     }
 }
