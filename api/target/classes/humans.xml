@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Humans>
+    <Human>
+        <nameUnq>Иванов Иван Иванович</nameUnq>
+        <passportId>1111</passportId>
+    </Human>
+    <Human>
+        <nameUnq>Сергеев Сергей Сергеевич</nameUnq>
+        <passportId>1112</passportId>
+    </Human>
+    <Human>
+        <nameUnq>Валериев Валерий Валерьевич</nameUnq>
+        <passportId>1113</passportId>
+    </Human>
+</Humans>
