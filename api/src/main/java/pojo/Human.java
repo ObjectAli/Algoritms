@@ -2,7 +2,7 @@ package pojo;
 
 import javax.xml.bind.annotation.*;
 
-@XmlRootElement(name="Human")
+@XmlRootElement(name = "Human")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Human {
 
@@ -10,6 +10,8 @@ public class Human {
     private String nameUnq;
     @XmlElement
     private long passportId;
+    @XmlElement
+    private int age;
 
     public String getNameUnq() {
         return nameUnq;
@@ -27,16 +29,26 @@ public class Human {
         this.passportId = passportId;
     }
 
-    public Human() {}
+    public int getAge() {
+        return age;
+    }
 
-    public Human(String nameUnq, long passportId) {
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Human() {
+    }
+
+    public Human(String nameUnq, long passportId, int age) {
         this.nameUnq = nameUnq;
         this.passportId = passportId;
+        this.age = age;
     }
 
     @Override
-    public String toString(){
-        return "[ nameUnq = " + nameUnq + ", passportId = " + passportId + "]";
+    public String toString() {
+        return "[ nameUnq = " + nameUnq + ", passportId = " + passportId + ", age = " + age  +  " ]";
     }
 
 }

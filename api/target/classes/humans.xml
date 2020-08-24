@@ -4,13 +4,22 @@
     <Human>
         <nameUnq>Иванов Иван Иванович</nameUnq>
         <passportId>1111</passportId>
+        <age>19</age>
     </Human>
     <Human>
         <nameUnq>Сергеев Сергей Сергеевич</nameUnq>
         <passportId>1112</passportId>
+        <age>72</age>
+    </Human>
+
+    <Human>
+        <nameUnq>Анатольев Анатолий Анатольевич</nameUnq>
+        <passportId>1113</passportId>
+        <age>73</age>
     </Human>
     <Human>
         <nameUnq>Валериев Валерий Валерьевич</nameUnq>
-        <passportId>1113</passportId>
+        <passportId>1114</passportId>
+        <age>35</age>
     </Human>
 </Humans>

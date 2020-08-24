@@ -11,7 +11,7 @@ public class SearchService {
     /**
      * Binary search for list<Human>
      * @param list  - list for search
-     * @param searchValue - value for search
+     * @param searchValue - value for search (passportId)
      * @return object where searchValue equals passportId
      */
     public Human binarySearch (List<Human> list, long searchValue){
