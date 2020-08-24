@@ -8,6 +8,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class SearchServiceTest {
+
     private static SearchService searchService = new SearchService();
 
     private static XmlReader xmlReader = new XmlReader();
